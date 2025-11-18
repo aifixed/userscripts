@@ -2,7 +2,7 @@
 // @name         Habr Content Filter
 // @namespace    https://github.com/aifixed/userscripts
 // @version      2.5
-// @description  Фильтрация контента на Хабре: скрытие статей, блокировка тегов и авторов, UI-панель.
+// @description  Фильтрация контента на Хабре: скрытие статей, блокировка по тегам и/или по авторов, UI-панель.
 // @author       Refactored by AI
 // @match        https://habr.com/*
 // @match        https://habr.com/ru/*
@@ -1344,4 +1344,5 @@
     } else {
         setTimeout(initialize, 100);
     }
+
 })();
