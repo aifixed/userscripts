@@ -1,9 +1,19 @@
-﻿// ==UserScript==
+// ==UserScript==
 // @name         Habr Content Filter
+// @name:ru      Фильтр контента Хабра (Habr Content Filter)
 // @namespace    https://github.com/aifixed/userscripts
-// @version      2.5
-// @description  Фильтрация контента на Хабре: скрытие статей, блокировка по тегам и/или по авторов, UI-панель.
-// @author       Refactored by AI
+// @version      2.5.1
+// @description  Фильтрация контента на Хабре: скрытие статей, блокировка авторов и корпоративных блогов, фильтр тегов, очистка ленты. Помогает скрыть ненужные посты и настроить персональную ленту Habr.
+// @description:ru Фильтрация контента на Хабре: скрытие статей, блокировка авторов и корпоративных блогов, фильтр тегов, очистка ленты. Помогает скрыть ненужные посты и настроить персональную ленту Habr.
+// @author       AiFixed
+// @license      MIT
+// @homepage     https://aifixed.github.io/userscripts/
+// @homepageURL  https://aifixed.github.io/userscripts/
+// @supportURL   https://github.com/aifixed/userscripts/issues
+// @updateURL    https://aifixed.github.io/userscripts/scripts/habr-content-filter.user.js
+// @downloadURL  https://aifixed.github.io/userscripts/scripts/habr-content-filter.user.js
+//
+// --- Матчи (по умолчанию покрывают всё необходимое) ---
 // @match        https://habr.com/*
 // @match        https://habr.com/ru/*
 // @match        https://habr.com/ru/articles/*
@@ -11,10 +21,10 @@
 // @match        https://habr.com/ru/hubs/*
 // @match        https://habr.com/ru/users/*
 // @match        https://habr.com/ru/companies/*
+//
+// --- Прочее ---
 // @grant        GM_addStyle
 // @run-at       document-end
-// @downloadURL  https://aifixed.github.io/userscripts/scripts/habr-content-filter.user.js
-// @updateURL    https://aifixed.github.io/userscripts/scripts/habr-content-filter.user.js
 // ==/UserScript==
 
 (function() {
@@ -1346,3 +1356,4 @@
     }
 
 })();
+
